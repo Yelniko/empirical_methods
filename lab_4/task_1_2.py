@@ -52,9 +52,9 @@ def main():
 
     models = {
         "Linear": LinearRegression(),
-        "Ridge": Ridge(alpha=0.01),
-        "Lasso": Lasso(alpha=0.01),
-        "ElasticNet": ElasticNet(alpha=0.01),
+        "Ridge": Ridge(alpha=0.001),
+        "Lasso": Lasso(alpha=0.001),
+        "ElasticNet": ElasticNet(alpha=0.001),
     }
 
     result = []
