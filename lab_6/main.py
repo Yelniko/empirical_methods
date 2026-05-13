@@ -15,6 +15,8 @@ def main():
     df = download("https://raw.githubusercontent.com/ApoorvaKrisna/NASA-promise-dataset-repository/main/jm1.arff")
     corr = df.corr(numeric_only=True)
 
+    print(df)
+
     plt.figure()
     sns.heatmap(corr)
     plt.show()
